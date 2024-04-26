@@ -703,7 +703,7 @@ body.loaded {
 }
 .tj-header-area.header-2.sticky {
   top: 0;
-  opacity: 1;
+  opacity: 95%;
   animation: bounceInDown 1s;
   animation-duration: 1s;
   animation-fill-mode: both;
