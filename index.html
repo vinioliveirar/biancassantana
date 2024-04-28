@@ -165,7 +165,7 @@
                     <div class="col-md-6">
                         <div class="hero-content-box">
                             <span class="hero-sub-title">Olá, eu sou a Bianca!</span>
-                            <h1 class="hero-title">Design de<br>Interiores
+                            <h1 class="hero-title">Design de<br> Interiores
                             </h1>
 
                             <div class="hero-image-box d-md-none text-center">
@@ -1506,30 +1506,34 @@
                             </div>
 
                             <div class="tj-contact-form">
-                                <form id="contact-form" novalidate="novalidate">
+                                <form action="process_form.php" method="POST">
+                                    
                                     <div class="row gx-3">
                                         <div class="col-sm-6">
                                             <div class="form_group">
-                                                <input disabled type="text" name="conName" id="conName" placeholder="Nome" autocomplete="off">
+                                                <input  type="text" name="Name" id="conName" placeholder="Nome" autocomplete="off">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form_group">
-                                                <input disabled type="text" name="conLName" id="conLName" placeholder="Sobrenome" autocomplete="off">
+                                                <input 
+                                                 type="text" name="LName" id="conLName" placeholder="Sobrenome" autocomplete="off">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form_group">
-                                                <input disabled type="email" name="conEmail" id="conEmail" placeholder="Email" autocomplete="off">
+                                                <input 
+                                                 type="email" name="Email" id="conEmail" placeholder="Email" autocomplete="off">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form_group">
-                                                <input disabled type="tel" name="conPhone" id="conPhone" placeholder="Telefone/WhastApp" autocomplete="off">
+                                                <input 
+                                                 type="tel" name="Phone" id="conPhone" placeholder="Telefone/WhastApp" autocomplete="off">
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <!--<div  class="form_group">
+                                            <div  class="form_group">
                                                 <select  name="conService" id="conService" class="tj-nice-select" style="display: none;">
                                                     <option value="" selected="" disabled="">Selecione o assunto</option>
                                                     <option value="braning">Orçamentos</option>
@@ -1545,17 +1549,22 @@
                                                         <li data-value="uxui" class="option">Sugestões</li>
                                                     </ul>
                                                 </div>
-                                            </div>-->
+                                            </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form_group">
-                                                <textarea disabled name="conMessage" id="conMessage" placeholder="Escreva sua mensagem..."></textarea>
+                                                <textarea 
+                                                 name="conMessage" id="conMessage" placeholder="Escreva sua mensagem..."></textarea>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form_btn">
-                                                <button disabled type="submit" class="btn tj-btn-primary">Enviar</button>
+                                                <button 
+                                                 type="submit" class="btn tj-btn-primary">Enviar</button>
                                             </div>
+                                            <input type="hidden" name="_subject" value="Novo Contato">
+                                            <input type="text" name="_honey" style="display: none;">
+                                            <input type="hidden" name="_captcha" value="false">
                                         </div>
                                     </div>
                                 </form>
